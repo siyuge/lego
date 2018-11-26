@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Double numbers</title>
+</head>
+
+<body>
+<div style="font-size:144px;text-align:center;">
+
+<script type="text/javascript">
+
+    var char = "ABCDEFGHIJKLMNOPQRSTUV";
+    var rom = "ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ";
+    var rann = Math.ceil(Math.random()*21);
+
+    document.write("材"+rom.substr(Math.round(Math.random()*9),1)+" "+char.substr(Math.round(Math.random()*21),1)+"-"+rann+"/"+(rann+1));
+
+</script>
+
+<p><button onclick="javascript:window.location.reload()">Generate</button></p>
+
+</div>
+</body>
+
+</html>

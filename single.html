@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Single</title>
+</head>
+
+<body>
+<div style="font-size:144px;text-align:center;">
+
+<script type="text/javascript">
+
+    var char = "ABCDEFGHIJKLMNOPQRSTUV";
+    var rom = "ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩ";
+
+    document.write("材"+rom.substr(Math.round(Math.random()*9),1)+" "+char.substr(Math.round(Math.random()*21),1)+"-"+Math.ceil(22*Math.random()));
+
+</script>
+
+<p><button onclick="javascript:window.location.reload()">Generate</button></p>
+
+</div>
+</body>
+
+</html>
