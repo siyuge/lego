@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Single</title>
+</head>
+
+<body>
+<div style="font-size:72px;text-align:center;">
+
+<script type="text/javascript">
+
+    var rom = ["Ⅰ","Ⅱ","Ⅲ","Ⅳ","Ⅴ","Ⅵ","Ⅶ","Ⅷ","Ⅸ","Ⅹ"];
+        ranrom = [];
+        i = rom.length;
+        j = 0;
+
+    while (i--) {
+        j = Math.round(Math.random() * i);
+        ranrom.push(rom[j]);
+        rom.splice(j,1);
+    }
+
+    var char = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U"];
+        ranchar = [];
+        i = char.length;
+        j = 0;
+
+    while (i--) {
+        j = Math.round(Math.random() * i);
+        ranchar.push(char[j]);
+        char.splice(j,1);
+    }
+    
+    for (i=0; i<=9; i++){
+    document.write("材"+ranrom[i]+" "+ranchar[i]+"-"+Math.ceil(22*Math.random())+"<br />")
+    }
+
+</script>
+
+</div>
+</body>
+
+</html>
